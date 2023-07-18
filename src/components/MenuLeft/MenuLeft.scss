@@ -1,0 +1,32 @@
+.menu-left {
+  width: 100px;
+  height: 900px;
+  background-color: rgba(2, 2, 3, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  align-content: center;
+  justify-content: center;
+}
+.icone-menu-left {
+  width: 56%;
+  margin: 10px 0;
+}
+.copy-right {
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  transform: rotate(-90deg);
+  position: absolute;
+  bottom: 17%;
+  width: 150px;
+}
+@media (min-width: 1440px) {
+  .menu-left {
+    width: 8%;
+    height: 1024px;
+  }
+}
+
+

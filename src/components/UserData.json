@@ -1,0 +1,17 @@
+{
+  "data": {
+      "id": 12,
+      "keyData": {
+        "calorieCount": 1930,
+        "carbohydrateCount": 290,
+        "lipidCount": 50,
+        "proteinCount": 155
+      },
+      "todayScore": 0.12,
+      "userInfos": {
+        "age": 31,
+        "firstName": "Karl",
+        "lastName": "Dovineau"
+      }
+  }
+}

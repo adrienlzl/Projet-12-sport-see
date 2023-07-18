@@ -1,0 +1,29 @@
+.doughnut-chart {
+  position: relative;
+}
+
+.score-doughnut-chart {
+  color: rgba(32, 37, 58, 1);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 24px;
+  position: absolute;
+  top: 28px;
+  left: 33px;
+}
+.value-doughnut-chart {
+  color: rgba(40, 45, 48, 1);
+  font-size: 26px;
+  font-weight: 700;
+}
+.text-doughnut-chart {
+  color: rgba(116, 121, 140, 1);
+  font-size: 15px;
+  font-weight: 400;
+  width: 55px;
+}
+.text-center-doughnut-chart {
+  position: absolute;
+  top: 39%;
+  left: 44%;
+}
