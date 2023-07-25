@@ -1,0 +1,62 @@
+@charset "UTF-8";
+.daily-activity-chart {
+  background-color: #FBFBFB;
+  width: 900px;
+  padding-top: 100px;
+  position: relative;
+}
+
+.top-div {
+  background-color: #FBFBFB;
+}
+
+.title-daily-activity-chart {
+  color: #20253A;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.legend-daily-activity-chart {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.poids, .calorie-brulées {
+  color: #74798C;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.poids {
+  margin-right: 30px;
+}
+
+.circle-01 {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgb(40, 45, 48);
+  margin-right: 15px;
+}
+
+.circle-02 {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgb(230, 0, 0);
+  margin-right: 15px;
+}
+
+.title-legend-daily-activity-chart {
+  display: flex;
+  flex-direction: row;
+  width: 790px;
+  margin: 0 15px;
+  justify-content: space-between;
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+
+/*# sourceMappingURL=DailyActivityChart.css.map */

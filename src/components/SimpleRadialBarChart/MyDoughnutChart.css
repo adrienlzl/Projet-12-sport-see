@@ -1,0 +1,34 @@
+.doughnut-chart {
+  position: relative;
+}
+
+.score-doughnut-chart {
+  color: rgb(32, 37, 58);
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 24px;
+  position: absolute;
+  top: 28px;
+  left: 33px;
+}
+
+.value-doughnut-chart {
+  color: rgb(40, 45, 48);
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.text-doughnut-chart {
+  color: rgb(116, 121, 140);
+  font-size: 15px;
+  font-weight: 400;
+  width: 55px;
+}
+
+.text-center-doughnut-chart {
+  position: absolute;
+  top: 39%;
+  left: 44%;
+}
+
+/*# sourceMappingURL=MyDoughnutChart.css.map */

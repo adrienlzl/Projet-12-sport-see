@@ -1,0 +1,35 @@
+.chart-container {
+  width: 285px;
+  overflow: hidden;
+  position: relative;
+}
+
+.text-title-simple-line-chart {
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 500;
+  opacity: 0.5039569736;
+}
+
+.title-simple-line-chart {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 147px;
+}
+
+.custom-tooltip {
+  height: 25px;
+  width: 50px;
+  background-color: rgb(255, 255, 255);
+}
+
+.label-tooltip {
+  color: #000;
+  font-size: 8px;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 5px;
+}
+
+/*# sourceMappingURL=SimpleLineChart.css.map */

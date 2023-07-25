@@ -33,6 +33,8 @@ function ProfilePage() {
         averageSessions: null
     });
 
+
+
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -62,10 +64,11 @@ function ProfilePage() {
         fetchData();
     }, [id]);
 
+    if (!data.userData || !data.activity || !data.averageSessions || !data.performance) {
+        return <div>Loading...</div>;
+    }
 
-    console.log(data)
-
-    const firstName = data.userData.data.userInfos.firstName
+    const firstName = data.userData.data.userInfos.firstName;
     const sessions = data.activity.data.sessions.map(session => {
         return {
             day: session.day,
@@ -79,17 +82,18 @@ function ProfilePage() {
             value: session.sessionLength
         };
     });
-    const chartSimpleLine = [
-        {dataKey: 'value', stroke: 'blue'}
-    ];
+    const chartSimpleLine = [{ dataKey: 'value', stroke: 'blue' }];
     const kindArray = data.performance.data.kind;
     const formattedPerformanceData = data.performance.data.data.map(valueObject => {
         const kindWord = kindArray[valueObject.kind];
-        return {value: valueObject.value, kind: kindWord};
+        return { value: valueObject.value, kind: kindWord };
     });
     const todayScore = data.userData.data.todayScore !== undefined ? data.userData.data.todayScore : data.userData.data.score;
     const scorePercentage = todayScore * 100;
     const keyData = data.userData.data.keyData;
+
+
+
 
 
     return (
@@ -115,45 +119,3 @@ function ProfilePage() {
 export default ProfilePage;
 
 
-// const [userDataResponse, performanceDataResponse,
-//     activityDataResponse,
-//     averageSessionsDataResponse] = await Promise.all([
-//     fetch('../components/UserData.json'),
-//     fetch('../components/Performance.json'),
-//     fetch('../components/activity.json'),
-//     fetch('../components/averageSessions.json')
-// ]);
-
-
-// useEffect(() => {
-//     const fetchData = async () => {
-//         try {
-//             const [userDataResponse, performanceDataResponse,
-//                 activityDataResponse,
-//                 averageSessionsDataResponse] = await Promise.all([
-//                 fetch(`http://localhost:3000/user/${id}`),
-//                 fetch(`http://localhost:3000/user/${id}/performance`),
-//                 fetch(`http://localhost:3000/user/${id}/activity`),
-//                 fetch(`http://localhost:3000/user/${id}/average-sessions`)
-//             ]);
-//             const userData = await userDataResponse.json();
-//             const performance = await performanceDataResponse.json();
-//             const activity = await activityDataResponse.json();
-//             const averageSessions = await averageSessionsDataResponse.json();
-//
-//             setUserData(userData);
-//             setPerformanceData(performance);
-//             setActivityData(activity);
-//             setAverageSessionsData(averageSessions);
-//
-//             console.log("User data:", userData);
-//             console.log("Performance data:", performance);
-//             console.log("Activity data:", activity);
-//             console.log("Average sessions data:", averageSessions);
-//         } catch (error) {
-//             console.error("Error fetching data:", error);
-//         }
-//     };
-//
-//     fetchData();
-// }, [id]);
